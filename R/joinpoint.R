@@ -30,7 +30,7 @@
 #' @return the list of the output tables
 joinpoint = function(data, x, y, by=NULL, se=NULL,
                      export_opts=export_options(), run_opts=run_options(),
-                     cmd_path=getOption("joinpoint_path", "C:/Program Files (x86)/Joinpoint Command/jpCommand.exe"),
+                     cmd_path=getOption("joinpoint_path", "/home/hoejunkwon/.wine/drive_c/Program Files (x86)/Joinpoint Command/jpCommand.exe"),
                      dir=get_tempdir(), verbose=FALSE){
   check_cmd_path(cmd_path)
   start_time = Sys.time()
